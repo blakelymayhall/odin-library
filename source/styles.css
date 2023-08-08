@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.headerBar, .footerBar  {
+    display: flex;
+    background: rgb(35, 92, 40);
+    min-height: 12vh;
+    align-items: center;
+    /* more decor?*/
+}
+
+.headerBar p, .footerBar p {
+    margin-left: 15vw;
+    font-size: 2rem;
+    font-weight: 700;
+    color: antiquewhite;
+    font-family:'Courier New', Courier, monospace
+}
+
+.navBar {
+    display: flex;
+    background: rgb(194, 174, 91);
+    min-height: 8vh;
+    align-items: center;
+    padding-left: 15vw;
+    gap: 2vw;
+}
+
+.navBar button {
+    height: 3.5vh;
+    width: 8vw;
+    border-radius: 25px;
+    /* make symbols */
+}
+
+.navBar .spacer {
+    min-width: 17vw;
+}
+
+.navBar #searchQuery {
+    height: 3vh;
+    min-width: 20vw;
+    border-radius: 25px;
+    text-align: left;
+    padding-left: 10px;
+    /* add a label or a symbol*/
+}
+
+.mainWindow {
+    display: grid;
+    grid-template-columns: 15vw 70vw 15vw;
+    min-height: 68vh;
+    max-height: 68vh;
+    overflow: scroll;
+}
+
+.mainWindow .mainWindowContent {
+    background: rgb(161, 126, 76);
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, 20%);
+    grid-template-rows: 22vh 22vh 22vh;
+    grid-auto-rows: 22vh;   
+}
+
+.bookCell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookCard {
+    background: whitesmoke;
+    height: 85%;
+    aspect-ratio: 1.5 / 2;
+    border-radius: 25px;
+}
+
+.mainWindow .mainWindowBkgrnd {
+    background: rgb(167, 167, 167);
+     /* make cool images? */
+}
+
+.footerBar {
+    justify-content: center;
+}
+
+.footerBar p {
+    font-size: 1rem;
+    margin: 0;
+}
