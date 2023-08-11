@@ -71,10 +71,19 @@
 }
 
 .bookCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: whitesmoke;
     height: 85%;
     aspect-ratio: 1.5 / 2;
     border-radius: 25px;
+}
+
+.bookCard p {
+    padding: 3%;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
 .mainWindow .mainWindowBkgrnd {
