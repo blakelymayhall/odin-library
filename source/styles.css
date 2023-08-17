@@ -99,3 +99,39 @@
     font-size: 1rem;
     margin: 0;
 }
+
+.bookInfoOverlay, .addBookOverlay, .removeBookOverlay {
+    position: absolute;
+    background: ivory;
+    z-index: 1;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
+}
+
+.bookInfoOverlay {
+    width: 30vw;
+    height: 60vh;
+    margin-top: 4vh;
+    margin-left: 20vw;
+    display: none;
+}
+
+.addBookOverlay {
+    width: 50vw;
+    height: 50vh;
+    margin-top: 4vh;
+    margin-left: 10vw;
+    display: none;
+    flex-direction: column;
+}
+
+.removeBookOverlay { 
+    width: 25vw;
+    height: 30vh;
+    margin-top: 4vh;
+    margin-left: 22.5vw;
+    display: flex;
+    flex-direction: column;
+}

@@ -22,6 +22,34 @@
         <div class="mainWindowBkgrnd"></div>
         <div class="mainWindowContent">
             <!-- Book Cells Go Here Via DOM Manip-->
+            <!--...-->
+            <!-- None or one of these forms will appear 
+                 via script based on a condition -->
+            <form class="bookInfoOverlay">
+
+            </form>
+            <form class="addBookOverlay">
+                <label for="inputBookTitle">Enter Title:</label>
+                <input type="text" id="inputBookTitle" name="inputBookTitle">
+                <label for="inputBookAuthor">Enter Author's Name:</label>
+                <input type="text" id="inputBookAuthor" name="inputBookAuthor">
+                <label for="inputNoPages">Enter # of Pages:</label>
+                <input type="text" id="inputNoPages" name="inputNoPages">
+                <div>
+                    <label for="inputHaveRead">Already Read?</label>
+                    <input type="checkbox" id="inputHaveRead" name="inputHaveRead">
+                </div>
+            </form>
+            <form class="removeBookOverlay">
+                <label for="bookToRemove">Select a Book:</label>
+                <select id="bookToRemove" name="bookToRemove">
+                    <!--Load the book list here-->
+                </select>
+                <div>
+                    <button id="closeForm">Close</button>
+                    <button id="confirmForm">Confirm</button>
+                </div>
+            </form>
         </div>
         <div class="mainWindowBkgrnd"></div>
     </div>

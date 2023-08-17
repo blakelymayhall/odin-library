@@ -21,9 +21,11 @@ Repo for the library project in the javascript course of the Odin Project
 - Implement an initial array of books that populate the DOM on startup
 - Reorged code to be more readable
 
+8/12/23 - 8/16/23
+- Implement on-click overlay form designs
+- Still some work to finish out here but the bones are filling in
 
 TODO:
-
-- Implement on-click overlay
 - Add images to the banners to make it look better
-- Maybe play with the background of the books... canned image?
+- More responsive display
+- Maybe play with the background of the books... canned image(s)?

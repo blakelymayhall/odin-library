@@ -8,12 +8,6 @@ function Book(idx, title, author, noPages, didRead) {
     this.author = author;
     this.noPages = noPages;
     this.didRead = didRead;
-
-    this.info = function() {
-        let didReadText = "";
-        didRead ? didReadText = "read" : didReadText = "not read yet";
-        return `${title} by ${author}, ${noPages} pages, ${didReadText}`; 
-    } 
 }
 
 function addBookToLibrary(book) {
@@ -26,6 +20,10 @@ function initLibrary() {
     addBookToLibrary(Twilight);
     addBookToLibrary(BreakingDawn);
     addBookToLibrary(FiftyShades);
+    addBookToLibrary(IT);
+    addBookToLibrary(PetSemetary);
+    addBookToLibrary(Twilight);
+    addBookToLibrary(BreakingDawn);
 }
 
 function initalLoad() {
