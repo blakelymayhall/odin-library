@@ -100,7 +100,22 @@
     margin: 0;
 }
 
-.bookInfoOverlay, .addBookOverlay, .removeBookOverlay {
+button {
+    min-width: 5rem;
+    border-radius: 20px;
+}
+
+.closeForm {
+    background: darkred;
+    color: ivory;
+}
+
+.confirmForm {
+    background: forestgreen;
+    color: ivory;
+}
+
+.bookInfoOverlay, #addBookOverlay, #removeBookOverlay {
     position: absolute;
     background: ivory;
     z-index: 1;
@@ -112,26 +127,67 @@
 
 .bookInfoOverlay {
     width: 30vw;
-    height: 60vh;
-    margin-top: 4vh;
+    height: 45vh;
+    margin-top: 8vh;
+    margin-left: 17vw;
+    display: none;
+    flex-direction: column;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    padding: 1% 3% 2%;
+    gap: 4%;
+}
+
+.bookInfoOverlay p {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.5%;
+}
+
+.bookInfoOverlay div {
+    display: flex;
+}
+
+.bookInfoOverlay div p {
+    min-width: 50%;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.bookInfoOverlay div .bookData {
+    font-weight: 300;
+}
+
+.bookInfoOverlay .bookImage {
+    display: flex;
+    justify-content: center;
+}
+
+#addBookOverlay {
+    width: 30vw;
+    height: 25vh;
+    margin-top: 15vh;
     margin-left: 20vw;
     display: none;
+    flex-direction: column;
+    padding: 1% 3% 2%;
+    gap: 2%;
 }
 
-.addBookOverlay {
-    width: 50vw;
-    height: 50vh;
-    margin-top: 4vh;
-    margin-left: 10vw;
+#addBookOverlay p {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.5%;
+}
+
+#removeBookOverlay { 
+    width: 25vw;
+    height: 10vh;
+    margin-top: 6vh;
+    margin-left: 22.5vw;
     display: none;
     flex-direction: column;
+    padding: 1% 3% 1%;
+    gap: 10%;
 }
 
-.removeBookOverlay { 
-    width: 25vw;
-    height: 30vh;
-    margin-top: 4vh;
-    margin-left: 22.5vw;
-    display: flex;
-    flex-direction: column;
-}

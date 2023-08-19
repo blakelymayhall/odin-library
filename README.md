@@ -25,6 +25,14 @@ Repo for the library project in the javascript course of the Odin Project
 - Implement on-click overlay form designs
 - Still some work to finish out here but the bones are filling in
 
+8/19/23 - 
+- Improved the on click forms 
+- Began writing their functionality in Javascript.
+- Still todo:
+    - Actually use the ID's for the books rather than just their titles... 
+    - This will come to a head in the remove book option. Removing by title
+      isn't enough
+
 TODO:
 - Add images to the banners to make it look better
 - More responsive display

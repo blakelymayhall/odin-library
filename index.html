@@ -25,29 +25,57 @@
             <!--...-->
             <!-- None or one of these forms will appear 
                  via script based on a condition -->
-            <form class="bookInfoOverlay">
-
-            </form>
-            <form class="addBookOverlay">
+            <div class="bookInfoOverlay">
+                <p>Title Information:</p>
+                <div>
+                    <p>Book Title:</p>
+                    <p class="bookData" id="bookTitle">Book Title</p>
+                </div>
+                <div>
+                    <p>Author:</p>
+                    <p class="bookData" id="bookAuthor">Author</p>
+                </div>
+                <div>
+                    <p>Number of Pages:</p>
+                    <p class="bookData" id="noPages">###</p>
+                </div>
+                <div>
+                    <p>Already Read?</p>
+                    <p class="bookData" id="didRead">Yes</p>
+                </div>
+                <div class="bookImage">
+                    <img src="/media/cc0-images/grapefruit-slice-332-332.jpg" 
+                         alt="Book Image"/>
+                </div>
+                <div>
+                    <button type="button" class="closeForm">Close</button>
+                </div>
+            </div>
+            <form id="addBookOverlay">
+                <p>Add Title to Library:</p>
                 <label for="inputBookTitle">Enter Title:</label>
                 <input type="text" id="inputBookTitle" name="inputBookTitle">
                 <label for="inputBookAuthor">Enter Author's Name:</label>
                 <input type="text" id="inputBookAuthor" name="inputBookAuthor">
                 <label for="inputNoPages">Enter # of Pages:</label>
-                <input type="text" id="inputNoPages" name="inputNoPages">
+                <input type="number" id="inputNoPages" name="inputNoPages">
                 <div>
                     <label for="inputHaveRead">Already Read?</label>
                     <input type="checkbox" id="inputHaveRead" name="inputHaveRead">
                 </div>
+                <div>
+                    <button type="button" class="closeForm">Close</button>
+                    <button type="button" class="confirmForm">Confirm</button>
+                </div>
             </form>
-            <form class="removeBookOverlay">
+            <form id="removeBookOverlay">
                 <label for="bookToRemove">Select a Book:</label>
                 <select id="bookToRemove" name="bookToRemove">
                     <!--Load the book list here-->
                 </select>
                 <div>
-                    <button id="closeForm">Close</button>
-                    <button id="confirmForm">Confirm</button>
+                    <button type="button" class="closeForm">Close</button>
+                    <button type="button" class="confirmForm">Confirm</button>
                 </div>
             </form>
         </div>
