@@ -1,7 +1,7 @@
 //
 // Function Definitions
 //
-function Book(bookID, title, author, noPages, didRead, img = "/source/images/no_image.jpg") {
+function Book(bookID, title, author, noPages, didRead, img = "source/images/no_image.jpg") {
   
     const coverimgs = [
         "source/images/book_cover_gray.jpg", 
