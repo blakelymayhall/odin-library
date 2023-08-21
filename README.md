@@ -1,6 +1,10 @@
 # odin-library
 Repo for the library project in the javascript course of the Odin Project
 
+Goal is a functional library app with a UI that shows what books are in the library
+and gives the user the ability to add or remove books. No other conditions
+are given.
+
 # Process Notes
 
 8/6/23 - 8/7/23 
@@ -25,7 +29,7 @@ Repo for the library project in the javascript course of the Odin Project
 - Implement on-click overlay form designs
 - Still some work to finish out here but the bones are filling in
 
-8/19/23 - 
+8/19/23 
 - Improved the on click forms 
 - Began writing their functionality in Javascript.
 - Still todo:
@@ -33,7 +37,20 @@ Repo for the library project in the javascript course of the Odin Project
     - This will come to a head in the remove book option. Removing by title
       isn't enough
 
-TODO:
+8/20/23
+- Finalized MVP
+- Use value and unique bookID to manipulate the DOM and use the form inputs
+- All on-click forms appear to be working as intended and bug free
+    - Added images to the book info form
+- Added images to the cards to make them look better
+- Disbaled sort and search elements as I neve intended to give them function, just there for show
+- Enforced a minimum size on the body to make the display work better if the window is resized 
+    - Still not perfect, but not as bad
+- Added cover images
+
+Future Work:
 - Add images to the banners to make it look better
-- More responsive display
-- Maybe play with the background of the books... canned image(s)?
+    - Shelves? 
+- Even more responsive 
+- Storage of library 
+- Upload images for covers
