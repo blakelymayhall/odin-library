@@ -122,6 +122,15 @@ submitButtons.forEach((submitButton) => {
     submitButton.addEventListener("click", () => {
         if(libraryFunctionMode == LibraryFunctionModes.ADD_BOOK) {
             let addBookFormData = new FormData(document.forms.addBookOverlay);
+
+            for (const value of addBookFormData.values()) {
+                if(value == "" || value == null) {
+                    closeForms();
+                    libraryFunctionMode = LibraryFunctionModes.STANDBY;
+                    return;
+                }
+            }
+
             const newBook = new Book(genBookID(), 
                 addBookFormData.get("inputBookTitle"), 
                 addBookFormData.get("inputBookAuthor"), 
